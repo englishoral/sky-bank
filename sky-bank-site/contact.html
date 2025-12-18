@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Sky Bank — Contact</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="nav">
+    <div class="wrap nav-inner">
+      <a class="brand" href="index.html">
+        <div class="logo"><img src="logo.png" alt="Sky Bank logo"></div>
+        <div><strong>Sky Bank</strong><div class="small muted">Canada • Digital bank</div></div>
+      </a>
+      <div class="nav-links">
+        <a class="pill" data-nav href="index.html">Home</a>
+        <a class="pill" data-nav href="services.html">Services</a>
+        <a class="pill" data-nav href="pricing.html">Tarifs</a>
+        <a class="pill" data-nav href="campaign.html">Campaign</a>
+        <a class="pill" data-nav href="contact.html">Contact</a>
+        <a class="pill" data-nav href="faq.html">FAQ</a>
+        <a class="pill" data-nav href="login.html">Login</a>
+      </div>
+    </div>
+  </div>
+
+  <main class="wrap">
+    <section class="grid">
+      <div class="card section col-6">
+        <h1 style="margin-bottom:6px">Contact</h1>
+        <p class="sub">Get in touch with our agency.</p>
+
+        <div class="hr"></div>
+
+        <label class="small muted" for="name">Full name</label>
+        <input class="input" id="name" placeholder="Your full name" />
+
+        <div style="height:10px"></div>
+
+        <label class="small muted" for="email">Email</label>
+        <input class="input" id="email" placeholder="your@email.com" />
+
+        <div style="height:10px"></div>
+
+        <label class="small muted" for="topic">Topic</label>
+        <input class="input" id="topic" placeholder="Account / Loan / Cashback / Other" />
+
+        <div style="height:10px"></div>
+
+        <label class="small muted" for="msg">Message</label>
+        <textarea class="input" id="msg" rows="6" placeholder="Write your message..."></textarea>
+
+        <div style="display:flex;gap:12px;flex-wrap:wrap;margin-top:14px">
+          <button class="btn primary" type="button" onclick="showNotice('toastContact')">Send →</button>
+          <a class="btn ghost" href="faq.html">Read FAQ</a>
+        </div>
+
+        <div id="toastContact" class="notice" style="margin-top:14px">
+          <b>Message sent.</b>
+          <div class="muted small">We will get back to you as soon as possible.</div>
+        </div>
+      </div>
+
+      <aside class="card section col-6">
+        <h2>Agency details</h2>
+        <p class="muted">You can also reach us using the information below.</p>
+
+        <ul class="list" style="margin-top:14px">
+          <li class="item"><div class="badge">📞</div><div><b>Phone</b><div class="muted small">+1 416 555 0199</div></div></li>
+          <li class="item"><div class="badge">✉️</div><div><b>Email</b><div class="muted small">agency@skybank.ca</div></div></li>
+          <li class="item"><div class="badge">📍</div><div><b>Address</b><div class="muted small">123 Bay Street, Toronto, ON, Canada</div></div></li>
+          <li class="item"><div class="badge">🕒</div><div><b>Hours</b><div class="muted small">Mon–Fri: 9:00–18:00</div></div></li>
+        </ul>
+      </aside>
+    </section>
+
+    <footer class="footer">
+      <div>© <span id="y"></span> Sky Bank</div>
+      <div class="small">All rights reserved.</div>
+    </footer>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
